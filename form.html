@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .error{
+            color: red;
+        }
+         
+    </style>
+    <link href="css/style.css">
+    <script type="text/javascript" src="js/form.js"></script>
+</head>
+<body>
+    <div class="container">
+    <h1 id="title">Register Form</h1>
+    <form action="" method="" name="register" id="register">
+        <label>Username</label>
+        <input type="text" name="username">
+        <span id="error_username" class="error"></span>
+        <br>
+        <label>Phone</label>
+        <input type="number" name="phone">
+        <span id="error_phone" class="error"></span>
+        <br>
+        <label>Password</label>
+        <input type="password" name="password">
+        <span id="error_password" class="error"></span>
+        <br>
+        <label>Email</label>
+        <input type="email" name="email">
+        <span id="error_email" class="error"></span>
+        <br>
+        
+        <label>Address</label>
+        <input type="text" name="address">
+        <span id="error_address" class="error"></span>
+        <br>
+        <label>DOB</label>
+        <input type="text" name="year">
+        <span id="error_year" class="error"></span>
+        <input type="text" name="month">
+        <span id="error_month" class="error"></span>
+        <input type="text" name="day">
+        <span id="error_day" class="error"></span>
+
+        <br/>
+        <label>Country</label>
+        <select name="country">
+        <option value="">Select Country</option>
+        <option value="Nepal">Nepal</option>
+        <option value="India">India</option>
+        <option value="China">China</option>
+    </select>
+
+        <span id="error_country" class="error"></span>
+        <br/>
+        <label>Gender</label>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female
+        <span id="error_gender" class="error"></span>
+        <br/>
+        <label>Faculty</label>
+        <input type="checkbox" name="faculty[]" value="BIM">BIM
+        <input type="checkbox" name="faculty[]" value="CSIT">CSIT
+        <input type="checkbox" name="faculty[]" value="BSW">BSW
+        <span id="error_faculty" class="error"></span>
+        <br/>
+        <input type="checkbox" name="term" value="I accept Term and Condition">I accept Term
+        and Condition
+        <span id="error_term" class="error"></span>
+        <br/>
+        
+        <input type="button" value="register" name="btnregister" onclick="checkregisterform()">
+
+
+    </form>
+</div>
+</body>
+</html>
