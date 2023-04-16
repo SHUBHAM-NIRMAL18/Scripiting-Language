@@ -1,1 +1,1 @@
-# Scripiting-Lnaguage
+# Scripiting-Language
